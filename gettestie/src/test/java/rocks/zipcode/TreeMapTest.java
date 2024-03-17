@@ -4,7 +4,6 @@ import org.junit.Assert;
 import org.junit.Test;
 
 import java.util.TreeMap;
-import java.util.Vector;
 
 public class TreeMapTest {
 
@@ -29,7 +28,7 @@ public class TreeMapTest {
 
         int expected = 10;
 
-        int actual = treeMap.ceilingKey(10);
+        int actual = treeMap.ceilingKey(25);
 
         Assert.assertEquals(expected, actual);
 
@@ -58,7 +57,7 @@ public class TreeMapTest {
 
         int expected = 10;
 
-        int actual = treeMap.floorKey(10);
+        int actual = treeMap.floorKey(11);
 
         Assert.assertEquals(expected, actual);
     }
